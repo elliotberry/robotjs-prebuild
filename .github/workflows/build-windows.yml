@@ -1,0 +1,14 @@
+name: build-mac
+
+on: push
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install --global --production windows-build-tools
+      - run: npm install -g node-gyp
+      - run: npm install
+      - run: node-gyp rebuild
+      - run: npm run prebuild
