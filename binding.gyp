@@ -42,6 +42,9 @@
             }],
 
             ['OS == "linux"', {
+                'cflags_cc': [
+                    '-UV8_DEPRECATION_WARNINGS'
+                ],
                 'link_settings': {
                     'libraries': [
                         '-lpng',

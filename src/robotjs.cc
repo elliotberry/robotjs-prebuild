@@ -1,4 +1,4 @@
-﻿#include <node.h>
+#include <node.h>
 #include <nan.h>
 #include <v8.h>
 #include <vector>

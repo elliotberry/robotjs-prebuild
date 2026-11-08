@@ -95,3 +95,9 @@ nbproject
 !.gitignore
 !.editorconfig
 !.phpcs.xml.dist
+# build artifacts / alternate package managers
+/build/
+.pnp.*
+yarn.lock
+.yarn/
+/prebuilds/
